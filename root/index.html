@@ -1,62 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <header style="background-color:black ;">
-        <div>
-            <p>Grandes ofertas en comederos</p>
-            <ul>
-                <li>Español</li>
-                <li>ARG$</li>
-            </ul>
-        </div>
-        <img src="./img/Logo.png" alt="Logo">
-        <ul>
-            <li><a href="#"><img src="./img/Categorias.png" alt=""></a></li>
-            <li><a href="#"><img src="./img/Pets.png" alt=""></a></li>
-            <li><a href="#"><img src="./img/Sobre Nosotros.png" alt=""></a></li>
-            <li><a href="#"><img src="./img/Contactanos.png" alt=""></a></li>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="div-header">
+        <p>Grandes ofertas en comederos</p>
+        <ul class="ul-sin-puntito">
+          <li>Español</li>
+          <li>ARG$</li>
         </ul>
+      </div>
+      <nav class="nav-header">
+        <img src="./img/Logo.png" alt="Logo" />
+        <ul class="ul-sin-puntito">
+          <li>
+            <a href="#"><img src="./img/Categorias.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/Pets.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/Sobre Nosotros.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/Contactanos.png" alt="" /></a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <div>
-        <img src="./img/bowl-and-pet-daities-on-green-background 1.png" alt="">
-        <p>¡Es un placer tenerte aquí!</p>
-        <p>¡Comederos en descuento!</p>
-        <button>COMEDEROS</button>
-        </div>
-        <div>
-            <img src="./img/pawprint 1.png" alt="">
-            <h1>Productos Destacados</h1>
-            <ul>
-                <li>Comederos</li>
-                <li>Accesorios</li>
-                <li>Comida</li>
-            </ul>
-            <article>
-                <img src="./img/churrasquito.png" alt="Juguete churrasquito">
-                <h3>Juguete churrasquito</h3>
-                <p>$150</p>
-            </article>
-            <article>
-                <img src="./img/comedero.png" alt="Comedero para perro">
-                <h3>Comedero para perro</h3>
-                <p>$250</p>
-            </article>
-            <article>
-                <img src="./img/Huesito.png" alt="Juguete huesito">
-                <h3>Juguete huesito</h3>
-                <p>$650</p>
-            </article>
-        </div>    
+      <p id="p-de-banner" class="texto-centro">¡Es un placer tenerte aquí!</p>
+      <div class="banner">
+        <p class="texto-centro">¡Comederos en descuento!</p>
+        <p id="boton-comedero" class="texto-centro">COMEDEROS</p>
+      </div>
+      <div class="texto-centro">
+        <img src="./img/pawprint 1.png" alt="" />
+        <h1>Productos Destacados</h1>
+        <ul class="ul-destacados ul-sin-puntito">
+          <li>Comederos -</li>
+          <li>Accesorios -</li>
+          <li>Comida</li>
+        </ul>
+      </div>
+      <article class="tarjetas">
+        <img src="./img/churrasquito.png" alt="Juguete churrasquito" />
+        <h3>Juguete churrasquito</h3>
+        <p>$150</p>
+      </article>
+      <article class="tarjetas">
+        <img src="./img/comedero.png" alt="Comedero para perro" />
+        <h3>Comedero para perro</h3>
+        <p>$250</p>
+      </article>
+      <article class="tarjetas">
+        <img src="./img/Huesito.png" alt="Juguete huesito" />
+        <h3>Juguete huesito</h3>
+        <p>$650</p>
+      </article>
     </main>
-    <footer>
-        <p>Todos los derechos reservados Front End</p>
+    <footer class="texto-centro">
+      <div class="div-footer">
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>Localidad</h3>
+        <p>Calle - Provincia</p>
+        <i class="fa-solid fa-phone"></i>
+        <h3>telefono</h3>
+        <p>Numero de telefono</p>
+        <i class="fa-solid fa-envelope"></i>
+        <h3>Correo electrónico</h3>
+        <p>Dirección de correo</p>
+        <img src="./img/Logo (1).png" alt="" />
+      </div>
+        <p id="ultimo-p">Todos los derechos reservados Front End</p>
     </footer>
-</body>
+  </body>
 </html>
